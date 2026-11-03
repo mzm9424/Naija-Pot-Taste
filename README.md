@@ -1,99 +1,55 @@
-# Naija Pot Taste 🍲
+# Naija Pot Kitchen & Grill Ltd â€” React Web Application
 
-A modern Nigerian food and restaurant website showcasing authentic local dishes, menu offerings, and customer engagement features.
+A modern, responsive React + TypeScript web application for **Naija Pot Kitchen & Grill Ltd**, authentic Nigerian restaurant and grill house located in Bradville, Milton Keynes, UK.
 
-## 🌟 Features
+## Overview
 
-- Responsive design for mobile and desktop
-- Nigerian cuisine showcase
-- Interactive menu section
-- Contact page
-- About Us page
-- Fast-loading static website
-- GitHub Pages ready
+This application has been rewritten into a modern React application powered by Vite, TypeScript, and Tailwind CSS. It preserves all authentic culinary features, restaurant details, branding, and direct ordering workflows.
 
-## 📂 Project Structure
+## Features
 
-```
-.
-├── index.html
-├── about.html
-├── menu.html
-├── contact.html
-├── styles.css
-├── script.js
-├── images/
-└── assets/
-```
+- **Interactive Menu & Category Browsing**:
+  - Filter across 10 categories: Grills Corner, Rice Dishes, Solid Dishes (Swallows), Yam Dishes, Naija Delicacies, Fish & Side Dishes, Small Chops & Platters, Snacks & Extras, Bakery, Drinks.
+  - Live search bar by dish name and ingredient description.
+- **Interactive Swallow / Solid Dish Customizer**:
+  - Interactive pairing modal for Yam Powder (Amala), Pounded Yam, Garri White (Eba), and Garri Yellow (Eba).
+  - Step 1: Select traditional soup (Efo Riro, Ogbono, Okro, Ewedu).
+  - Step 2: Select protein (Peppered Fried Fish or Assorted Meat).
+  - Step 3: Optional protein additions (+Â£3.00).
+  - Dynamic pricing and instant formatted WhatsApp ordering or addition to Tray.
+- **Order Tray & Cart Drawer**:
+  - Add dishes, bakery items and swallows to order tray.
+  - Quantity controls, delivery or takeaway selection, special allergy/spice notes.
+  - Generates comprehensive WhatsApp order messages for one-tap sending.
+- **Bakery Collection**:
+  - Naija meat pies, freshly baked Agege-style loaves, tear & share rolls, and mini cake loaves.
+  - Advance enquiry and bulk order capabilities.
+- **Specials & Event Catering**:
+  - Sharing platters (Suya, Asun, Small Chops, Mixed Grill).
+  - Catering enquiry generator for birthdays, church functions, weddings and parties.
+- **Our Story & Heritage**:
+  - Story narrative celebrating Nigerian home cooking traditions and culinary roots.
+- **Contact & Location**:
+  - Bradville, Milton Keynes MK13 7DF location info, opening hours, direct phone, WhatsApp links, Instagram, and TikTok integration.
+  - Persistent Floating WhatsApp quick action button.
 
-## 🚀 Live Demo
+## Tech Stack
 
-Once GitHub Pages is enabled:
+- **Framework**: React 19 + TypeScript
+- **Bundler**: Vite
+- **Styling**: Tailwind CSS with custom brand design tokens
+- **Icons**: Lucide React + custom inline SVGs
 
-```
-https://mzm9424.github.io/Naija-Pot-Taste/
-```
-
-## 📖 Getting Started
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/mzm9424/Naija-Pot-Taste.git
-cd Naija-Pot-Taste
-```
-
-### Run Locally
-
-Simply open:
+## Development
 
 ```bash
-index.html
+npm run dev
 ```
 
-in your browser.
+App runs on `http://0.0.0.0:3000`.
 
-## 🌍 Deploy to GitHub Pages
+## Production Build
 
-1. Open your repository on GitHub.
-2. Go to **Settings** → **Pages**.
-3. Under **Build and Deployment**:
-   - Source: **Deploy from a branch**
-   - Branch: **main**
-   - Folder: **/ (root)**
-4. Save changes.
-5. GitHub will publish your site automatically.
-
-## 🍛 Featured Nigerian Dishes
-
-- Jollof Rice
-- Fried Rice
-- Pepper Soup
-- Suya
-- Egusi Soup
-- Pounded Yam
-- Amala & Ewedu
-
-## 🛠 Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
-
-## 🤝 Contributing
-
-Contributions are welcome.
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Submit a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-Made with ❤️ for lovers of Nigerian cuisine.
+```bash
+npm run build
+```
