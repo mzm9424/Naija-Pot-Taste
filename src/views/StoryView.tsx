@@ -15,7 +15,7 @@ export const StoryView: React.FC<StoryViewProps> = ({ onNavigate }) => {
         className="relative h-96 sm:h-[440px] bg-cover bg-center flex items-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1800&q=85')",
+            "url('/assets/images/uploads/Rice-with-suya-beef-450x450.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#050705]/95 via-[#050705]/80 to-[#050705]/50" />

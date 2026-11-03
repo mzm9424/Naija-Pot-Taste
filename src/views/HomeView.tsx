@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageView } from '../types';
 import { HeroSlider } from '../components/HeroSlider';
+import { SquareFoodSlider } from '../components/SquareFoodSlider';
 import { createWhatsAppUrl } from '../data/menuData';
 import { ArrowRight, ArrowUpRight, Sparkles } from 'lucide-react';
 
@@ -17,11 +18,15 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
       {/* Intro Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          {/* Circular Stamp / Monogram */}
+          {/* Circular Stamp / Logo Emblem */}
           <div className="lg:col-span-2 flex justify-start lg:justify-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-[#d8ad53] flex items-center justify-center relative font-serif text-3xl text-[#f2d58a] bg-[#141711] shadow-lg">
-              NP
-              <span className="absolute top-1 right-2 text-[#45a866] text-sm">✦</span>
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#d8ad53] relative bg-[#141711] shadow-xl shrink-0 group">
+              <img
+                src="/logo.png"
+                alt="Naija Pot Kitchen & Grill Seal"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
             </div>
           </div>
 
@@ -49,22 +54,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-lg overflow-hidden h-72 sm:h-96 shadow-2xl border border-white/5 group">
-              <img
-                src="/assets/images/uploads/Jollof-with-assorted-meat-450x450.jpg"
-                alt="A colourful freshly prepared Nigerian meal"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src =
-                    'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85';
-                }}
-              />
-              <span className="absolute bottom-0 right-0 bg-[#d8ad53] text-[#090a08] text-[10px] tracking-widest font-bold uppercase px-4 py-2.5">
-                A TASTE OF HOME
-              </span>
-            </div>
+          {/* GSAP Animated Square Food Slider */}
+          <div className="lg:col-span-5 flex justify-center">
+            <SquareFoodSlider onNavigate={onNavigate} />
           </div>
         </div>
       </section>
@@ -233,7 +225,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
           className="bg-cover bg-center min-h-[300px] lg:min-h-full"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1400&q=85')",
+              "url('/assets/images/uploads/Suya-meat-450x450.jpg')",
           }}
         />
         <div className="p-8 sm:p-14 lg:p-20 flex flex-col justify-center">

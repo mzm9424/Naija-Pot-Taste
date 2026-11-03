@@ -33,7 +33,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onNavigate }) => {
         className="relative h-96 sm:h-[440px] bg-cover bg-center flex items-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=85')",
+            "url('/assets/images/uploads/Small-chops-platterJ-450x450.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#050705]/95 via-[#050705]/80 to-[#050705]/50" />

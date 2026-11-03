@@ -77,6 +77,19 @@ export const SolidDishModal: React.FC<SolidDishModalProps> = ({
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#141711] via-[#141711]/40 to-transparent" />
+          {/* Official Logo Brand Badge */}
+          <div className="absolute top-3 left-3 flex items-center gap-2 bg-[#090a08]/85 backdrop-blur-md px-2.5 py-1 rounded-full border border-[#d8ad53]/40 shadow-lg">
+            <img
+              src="/logo.png"
+              alt="Naija Pot"
+              className="w-5 h-5 rounded-full object-cover"
+              referrerPolicy="no-referrer"
+            />
+            <span className="text-[10px] font-bold text-[#f2d58a] tracking-wider uppercase">
+              Naija Pot
+            </span>
+          </div>
+
           <button
             onClick={onClose}
             className="absolute top-3 right-3 p-2 rounded-full bg-black/60 hover:bg-black/90 text-[#f2d58a] transition-all cursor-pointer"

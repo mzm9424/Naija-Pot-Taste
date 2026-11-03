@@ -10,9 +10,17 @@ export const FloatingWhatsApp: React.FC = () => {
       aria-label="Chat with Naija Pot on WhatsApp"
       className="fixed right-4 sm:right-6 bottom-4 sm:bottom-6 z-40 flex items-center gap-2.5 bg-[#20c76a] hover:bg-[#2fe27c] text-[#062b17] font-bold text-xs sm:text-sm py-3 px-4 sm:px-5 rounded-full shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-green-900/50 group"
     >
+      <div className="w-5 h-5 rounded-full overflow-hidden border border-[#062b17]/30 shrink-0">
+        <img
+          src="/logo.png"
+          alt="Naija Pot"
+          className="w-full h-full object-cover"
+          referrerPolicy="no-referrer"
+        />
+      </div>
       <svg
         viewBox="0 0 32 32"
-        className="w-6 h-6 fill-current shrink-0 transition-transform group-hover:scale-110"
+        className="w-5 h-5 fill-current shrink-0 transition-transform group-hover:scale-110"
         aria-hidden="true"
         focusable="false"
       >

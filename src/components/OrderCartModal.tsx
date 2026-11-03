@@ -60,11 +60,23 @@ export const OrderCartModal: React.FC<OrderCartModalProps> = ({
         {/* Header */}
         <div className="p-4 sm:p-5 bg-[#0f110c] border-b border-white/10 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <ShoppingBag className="w-5 h-5 text-[#d8ad53]" />
-            <h2 className="font-serif text-lg sm:text-xl font-bold text-[#f2d58a]">
-              Your Order Tray
-            </h2>
-            <span className="text-xs bg-[#19834b] text-white px-2 py-0.5 rounded-full font-bold">
+            <div className="w-8 h-8 rounded-full overflow-hidden border border-[#d8ad53]/50 shrink-0 bg-black">
+              <img
+                src="/logo.png"
+                alt="Naija Pot"
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div>
+              <h2 className="font-serif text-base sm:text-lg font-bold text-[#f2d58a] leading-tight">
+                Your Order Tray
+              </h2>
+              <span className="text-[10px] text-[#b9b4a8] uppercase tracking-wider block">
+                Naija Pot Kitchen
+              </span>
+            </div>
+            <span className="text-xs bg-[#19834b] text-white px-2 py-0.5 rounded-full font-bold ml-1">
               {cart.reduce((count, i) => count + i.quantity, 0)} items
             </span>
           </div>

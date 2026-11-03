@@ -25,8 +25,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               onClick={() => handleNav('home')}
               className="flex items-center gap-3 text-left focus:outline-none cursor-pointer"
             >
-              <div className="w-10 h-10 rounded-full border border-[#d8ad53] flex items-center justify-center bg-[#141711] text-[#f2d58a] font-serif font-bold text-lg">
-                NP
+              <div className="w-10 h-10 rounded-full overflow-hidden border border-[#d8ad53] bg-[#141711] shrink-0 shadow-md">
+                <img
+                  src="/logo.png"
+                  alt="Naija Pot Kitchen & Grill Ltd Logo"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-serif font-bold text-lg text-[#f2d58a]">NAIJA POT</span>

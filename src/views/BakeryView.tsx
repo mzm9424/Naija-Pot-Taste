@@ -32,7 +32,7 @@ export const BakeryView: React.FC<BakeryViewProps> = ({ onAddToCart }) => {
         className="relative h-96 sm:h-[460px] bg-cover bg-center flex items-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1800&q=85')",
+            "url('/assets/images/uploads/Bread-450x450.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#050705]/95 via-[#050705]/80 to-[#050705]/50" />

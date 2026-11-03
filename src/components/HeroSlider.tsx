@@ -47,13 +47,21 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onNavigate }) => {
         return (
           <div
             key={index}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
               isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
             }`}
-            style={{ backgroundImage: `url(${slide.image})` }}
           >
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-full object-cover absolute inset-0"
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).src =
+                  '/assets/images/uploads/Jollof-with-assorted-meat-450x450.jpg';
+              }}
+            />
             {/* Dark gradient overlay for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#050705]/95 via-[#050705]/75 to-[#050705]/20" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#050705]/95 via-[#050705]/80 to-[#050705]/25" />
 
             {/* Slide Content */}
             <div className="relative z-20 h-full max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 flex items-center">

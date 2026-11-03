@@ -51,8 +51,13 @@ export const Header: React.FC<HeaderProps> = ({
             className="flex items-center gap-3 text-left group cursor-pointer focus:outline-none"
             aria-label="Naija Pot Home"
           >
-            <div className="w-12 h-12 rounded-full border border-[#d8ad53] flex items-center justify-center bg-[#141711] text-[#f2d58a] font-serif font-bold text-xl transition-transform group-hover:scale-105">
-              NP
+            <div className="w-12 h-12 rounded-full overflow-hidden border border-[#d8ad53] bg-[#141711] shrink-0 transition-transform group-hover:scale-105 shadow-md">
+              <img
+                src="/logo.png"
+                alt="Naija Pot Kitchen & Grill Ltd Logo"
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg sm:text-xl tracking-wider text-[#f2d58a] leading-tight">
