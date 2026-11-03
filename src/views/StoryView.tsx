@@ -15,7 +15,7 @@ export const StoryView: React.FC<StoryViewProps> = ({ onNavigate }) => {
         className="relative h-96 sm:h-[440px] bg-cover bg-center flex items-center"
         style={{
           backgroundImage:
-            "url('/assets/images/uploads/Rice-with-suya-beef-450x450.jpg')",
+            "url('./assets/images/uploads/Rice-with-suya-beef-450x450.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#050705]/95 via-[#050705]/80 to-[#050705]/50" />
@@ -79,7 +79,7 @@ export const StoryView: React.FC<StoryViewProps> = ({ onNavigate }) => {
 
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl h-80 sm:h-[460px] group">
             <img
-              src="/assets/images/uploads/Jollof-with-assorted-meat-450x450.jpg"
+              src="./assets/images/uploads/Jollof-with-assorted-meat-450x450.jpg"
               alt="A colourful meal prepared with care"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               onError={(e) => {

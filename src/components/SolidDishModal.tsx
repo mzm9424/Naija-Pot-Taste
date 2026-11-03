@@ -73,14 +73,14 @@ export const SolidDishModal: React.FC<SolidDishModalProps> = ({
             className="w-full h-full object-cover"
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).src =
-                '/assets/images/uploads/Amala-450x450.jpg';
+                './assets/images/uploads/Amala-450x450.jpg';
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#141711] via-[#141711]/40 to-transparent" />
           {/* Official Logo Brand Badge */}
           <div className="absolute top-3 left-3 flex items-center gap-2 bg-[#090a08]/85 backdrop-blur-md px-2.5 py-1 rounded-full border border-[#d8ad53]/40 shadow-lg">
             <img
-              src="/logo.png"
+              src="./logo.png"
               alt="Naija Pot"
               className="w-5 h-5 rounded-full object-cover"
               referrerPolicy="no-referrer"

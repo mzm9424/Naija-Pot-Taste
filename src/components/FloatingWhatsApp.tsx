@@ -12,7 +12,7 @@ export const FloatingWhatsApp: React.FC = () => {
     >
       <div className="w-5 h-5 rounded-full overflow-hidden border border-[#062b17]/30 shrink-0">
         <img
-          src="/logo.png"
+          src="./logo.png"
           alt="Naija Pot"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"

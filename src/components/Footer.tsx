@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             >
               <div className="w-10 h-10 rounded-full overflow-hidden border border-[#d8ad53] bg-[#141711] shrink-0 shadow-md">
                 <img
-                  src="/logo.png"
+                  src="./logo.png"
                   alt="Naija Pot Kitchen & Grill Ltd Logo"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

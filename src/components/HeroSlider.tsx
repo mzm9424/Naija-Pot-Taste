@@ -57,7 +57,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onNavigate }) => {
               className="w-full h-full object-cover absolute inset-0"
               onError={(e) => {
                 (e.currentTarget as HTMLImageElement).src =
-                  '/assets/images/uploads/Jollof-with-assorted-meat-450x450.jpg';
+                  './assets/images/uploads/Jollof-with-assorted-meat-450x450.jpg';
               }}
             />
             {/* Dark gradient overlay for text readability */}
